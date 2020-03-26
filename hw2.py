@@ -51,11 +51,10 @@ print ("Mode 1 & Old style:")
 print ("Number is %d" %num)
 num_as_str = str(num)
 num_product_of_digits = int(num_as_str[0])*int(num_as_str[1])*int(num_as_str[2])*int(num_as_str[3])
-print ("Product of digits is %d" %num_product_of_digits)
 reverse_num = int(num_as_str[3]+num_as_str[2]+num_as_str[1]+num_as_str[0])
-print ("Reverse number is %d" %reverse_num)
 sorted_num = int(''.join(sorted(list(num_as_str))))
-print ("Sorted number is %d" %sorted_num)
+print ("Product of digits is %d\nReverse number is %d\nSorted number is %d"\
+       %(num_product_of_digits,reverse_num,sorted_num))
 
 # Mode 2 & New style
 print ("Mode 2 & New style:")
