@@ -1,7 +1,7 @@
 import pyowm
 import time
 
-owm = pyowm.OWM('ef2206ff5da67de63306d0b143e20872')  # You MUST provide a valid API key
+owm = pyowm.OWM('d56e2b770ea8f43566b5c75755bbbd19')  # You MUST provide a valid API key
 
 # Have a pro subscription? Then use:
 # owm = pyowm.OWM(API_key='your-API-key', subscription_type='pro')
@@ -20,7 +20,7 @@ humidity = w.get_humidity()              # 87
 temperature = w.get_temperature('celsius')  # {'temp_max': 10.5, 'temp': 9.7, 'temp_min': 9.0}
 sky = w.get_status()
 
-print("In {} the weather is fine:".format(city))
+print("The weather is fine in {}:".format(city))
 print("Sky is {} ".format(sky))
 print("Wind is {} m/s\nDirection is {} degrees".format(wind['speed'],wind['deg']))
 print("Humidity is {}%".format(humidity))
