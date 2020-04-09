@@ -32,7 +32,7 @@ while True:
 # Task 3
 #
 from areas import restangle_area as restan
-from areas import right_triangle_area as trian
+from areas import triangle_area as trian
 from areas import circle_area as circ
 
 while True:
@@ -41,7 +41,7 @@ while True:
         print("Restangle area is {:.2f}".format(restan(float(input("Input lenght: ")),
         float(input("Input width: ")))))
     elif fig == 2:
-        print("Right triangle area is {:.2f}".format(trian(float(input("Input height: ")),
+        print("Triangle area is {:.2f}".format(trian(float(input("Input height: ")),
         float(input("Input base: ")))))
     elif fig == 3:
         print("Circle area is {:.2f}".format(circ(float(input("Input radius: ")))))

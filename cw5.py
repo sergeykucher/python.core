@@ -36,7 +36,7 @@ def restan(val1,val2):
     '''Function returns restangle area'''
     return val1*val2
 def trian(val1,val2):
-    '''Function returns right triangle area'''
+    '''Function returns triangle area'''
     return val1*val2/2
 def circ(val):
     '''Function returns circle area'''
@@ -48,7 +48,7 @@ while True:
         print("Restangle area is {:.2f}".format(restan(float(input("Input lenght: ")),
         float(input("Input width: ")))))
     elif fig == 2:
-        print("Right triangle area is {:.2f}".format(trian(float(input("Input height: ")),
+        print("Triangle area is {:.2f}".format(trian(float(input("Input height: ")),
         float(input("Input base: ")))))
     elif fig == 3:
         print("Circle area is {:.2f}".format(circ(float(input("Input radius: ")))))
@@ -60,10 +60,10 @@ while True:
 def sum_digits(value):
     ''' Function returns sum of digits'''
     result = 0
-    while value // 10:
+    while value:
         result += value % 10
         value = value // 10
-    return result + value % 10
+    return result
 
 value = 5123
 print("Sum of digits of number {} is {}".format(value,sum_digits(value)))
