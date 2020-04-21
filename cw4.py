@@ -39,7 +39,7 @@ print()
 # Task 3
 #
 value = int(input("Input value: "))
-factorial_value = 1;
+factorial_value = 1
 for i in range(value):
     factorial_value *= i+1
 print ("Factorial of {} is {}".format(value,factorial_value))
